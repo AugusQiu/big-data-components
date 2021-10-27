@@ -1,4 +1,5 @@
 ## HBase
+非关系型数据库，本质上是一个强化版的key-value数据库，通常的kv数据库存储的数据形式是<key, value, version>，而Hbase的数据形式是<[row key, column family: column key], value, version>，即key中添加了column family等概念，使得key包括了row key与column两个部分，所以HBase不是列数据库，你可以叫它列簇数据库
 ### HBase是什么？
 HBase是Hadoop生态体系中的数据库，分布式、面向列式的
 不同于Mysql，Mysql是**单机**的，Mysql能存储多少数据，就取决于它所属服务器的硬盘大小。一个系统，假如一天就能生产1TB的数据，数据量太过庞大，是不适合存Mysql的（现在的普遍做法是先把数据写到Kafka，然后再持久化落到Hive中）  
