@@ -21,7 +21,7 @@ MirrorMaker是为kafka提供的跨数据中心的数据同步和**迁移方案**
 整个过程要做到数据不丢失、消息不堆积，这也是数据同步的根本要求 
 ### offset  
 指某一个分区（partition）的偏移量  
-offset区分生产offset、消费offset 
-#### 生产offset 
-<img src="https://ask.qcloudimg.com/http-save/yehe-6070864/1cttms6wic.png?imageView2/2/w/1620" width="300" height="300">
+offset区分生产offset、消费offset
+### 补充文献
+* [Kafka理论之Partition & Replication](https://yhyr.github.io/2018/12/15/Kafka%E7%90%86%E8%AE%BA%E4%B9%8BPartition-Replication)
 
